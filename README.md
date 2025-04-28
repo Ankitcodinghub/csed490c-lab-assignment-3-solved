@@ -1,1 +1,132 @@
 # csed490c-lab-assignment-3-solved
+**TO GET THIS SOLUTION VISIT:** [CSED490C Lab Assignment 3 Solved](https://www.ankitcodinghub.com/product/csed490c-solved-2/)
+
+
+---
+
+📩 **If you need this solution or have special requests:** **Email:** ankitcoding@gmail.com  
+📱 **WhatsApp:** +1 419 877 7882  
+📄 **Get a quote instantly using this form:** [Ask Homework Questions](https://www.ankitcodinghub.com/services/ask-homework-questions/)
+
+*We deliver fast, professional, and affordable academic help.*
+
+---
+
+<h2>Description</h2>
+
+
+
+<div class="kk-star-ratings kksr-auto kksr-align-center kksr-valign-top" data-payload="{&quot;align&quot;:&quot;center&quot;,&quot;id&quot;:&quot;115717&quot;,&quot;slug&quot;:&quot;default&quot;,&quot;valign&quot;:&quot;top&quot;,&quot;ignore&quot;:&quot;&quot;,&quot;reference&quot;:&quot;auto&quot;,&quot;class&quot;:&quot;&quot;,&quot;count&quot;:&quot;1&quot;,&quot;legendonly&quot;:&quot;&quot;,&quot;readonly&quot;:&quot;&quot;,&quot;score&quot;:&quot;5&quot;,&quot;starsonly&quot;:&quot;&quot;,&quot;best&quot;:&quot;5&quot;,&quot;gap&quot;:&quot;4&quot;,&quot;greet&quot;:&quot;Rate this product&quot;,&quot;legend&quot;:&quot;5\/5 - (1 vote)&quot;,&quot;size&quot;:&quot;24&quot;,&quot;title&quot;:&quot;CSED490C Lab Assignment 3 Solved&quot;,&quot;width&quot;:&quot;138&quot;,&quot;_legend&quot;:&quot;{score}\/{best} - ({count} {votes})&quot;,&quot;font_factor&quot;:&quot;1.25&quot;}">
+
+<div class="kksr-stars">
+
+<div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1" style="padding-right: 4px">
+
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2" style="padding-right: 4px">
+
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3" style="padding-right: 4px">
+
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4" style="padding-right: 4px">
+
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5" style="padding-right: 4px">
+
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+
+<div class="kksr-stars-active" style="width: 138px;">
+            <div class="kksr-star" style="padding-right: 4px">
+
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 4px">
+
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 4px">
+
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 4px">
+
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 4px">
+
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="kksr-legend" style="font-size: 19.2px;">
+            5/5 - (1 vote)    </div>
+    </div>
+1 Objective
+
+The purpose of this lab is to introduce the student to the pinned memory APIs long with CUDA Streams by implementing vector addition. The student will implement pinned memory allocation and experience the usage of CUDA Streams by writing the CUDA calls in the host code.
+
+2 Instructions
+
+The code template in template.cu provides a starting point and handles the import and export as well as the checking of the solution. Students are expected to insert their code to where demarcated with //@@. Students are expected to leave the other code unchanged. Edit the skeleton code to perform the following:
+
+• Call pinned memory allocators
+
+• Partition data into per-stream segments
+
+• Copy data from host to device asynchronously
+
+• Initialize grid and block dimensions
+
+• Call the CUDA kernel
+
+• Copy data from device to host asynchronously
+
+• Synchronize
+
+• Free streams and device memory
+
+Compile the template with the provided Makefile. The executable generated as a result of compilation can be run using the following code:
+
+./StreamVectorAdd Template -e &lt;expected.raw&gt; -i &lt;input1.raw&gt;,&lt;input2.raw&gt;
+
+-o &lt;output.raw&gt; -t matrix
+
+where &lt;expected.raw&gt; is the expected output, &lt;input0.raw&gt;,&lt;input1.raw&gt; is the input dataset,
+
+and &lt;output.raw&gt; is an optional path to store the results.
+
+README.md has details on how to build libgputk, template.cpp and the dataset generator.
+
+3 What to Turn in
+
+Submit a report that includes the following:
+
+1. How many bytes of data (both read and write) are moved from host to device when using CUDAStreams?
+
+2. When should one use pinned memory? Explain.
+
+3. Your version of template.cu.
+
+4. Execution times of the kernel with the input data generated by the dataset generator (in a tableor graph). Please include the system information where you performed your evaluation. For time measurement, use gpuTKTime start and gpuTKTime stop functions (You can find details in libgputk/README.md).
+
+5. Execution times of the kernel for the largest input size (96000 elements) with different numbersof CUDA Streams (up to 32). Please include the system information where you performed your evaluation. For time measurement, use gpuTKTime start and gpuTKTime stop functions (You can find details in libgputk/README.md).
